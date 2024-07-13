@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="admin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Scores</title>
+</head>
+
+<body>
+    <nav>
+        <h3>score card</h3>
+        <h2>Cric Hub</h2>
+        <button class="button"> <a href="index.html">Home</a></button>
+    </nav>
+    <div class="container">
+        <div class="head">
+            Select Team
+        </div>
+        <div class="nav">
+            <select class="option" id="team1">
+                <option >IND</option>
+                <option>PAK</option>
+                <option >AUS</option>
+                <option >NZ</option>
+            </select>
+            <h3> vs </h3>
+            <select class="option" id="team2">
+                <option >IND</option>
+                <option>PAK</option>
+                <option >AUS</option>
+                <option >NZ</option>
+            </select>
+            
+        </div>
+        <div class="score-card">
+            <h3>Over
+            </h3>
+            <input type="text" class="over" id="over">
+            <button class="score-button">1</button>
+            <button class="score-button">2</button>
+            <button class="score-button">3</button>
+            <button class="score-button">4</button>
+            <button class="score-button">6</button>
+            <button class="score-button">WD</button>
+            <button class="score-button">W</button>
+        </div>
+        <div class="tail">
+            <button id="update">Update</button>
+            <button id="undo">Undo</button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

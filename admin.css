@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    overflow: hidden;
+    font-family: sans-serif;
+}
+nav{
+    height: 60px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(79, 79, 183);
+}
+.button{
+    height: 40px;
+    width: 90px;
+    margin-right: 40px;
+    border-radius: 20px;
+    outline: none;
+    border:none ;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid;
+    height: 400px;
+    width: 50%;
+    border-radius: 20px;
+}
+.head{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 26px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vmin;
+    gap: 5px;
+
+
+}
+.option{
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    outline: none;
+}
+.score-card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    height:200px;
+}
+.score-button{
+    height: 40px;
+    width: 40px;
+    border-radius:20px;
+    outline: none;
+    border: none;
+}
+.over{
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    border-radius: 16px;
+    outline: none;
+}
+.tail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#update,#undo{
+    height: 40px;
+    width: 60px;
+    border-radius: 20px;
+    outline: none;
+}
