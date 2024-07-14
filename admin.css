@@ -61,7 +61,7 @@ nav{
     align-items: center;
     gap: 10px;
     justify-content: center;
-    height:200px;
+    height: 100px;
 }
 .score-button{
     height: 40px;
@@ -77,6 +77,13 @@ nav{
     border-radius: 16px;
     outline: none;
 }
+#over-runs{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    height: 100px;
+}
 .tail{
     display: flex;
     align-items: center;
@@ -89,3 +96,6 @@ nav{
     border-radius: 20px;
     outline: none;
 }
+.invisible{
+    display: none;
+} 
