@@ -31,7 +31,7 @@ nav{
     left: 50%;
     transform: translate(-50%,-50%);
     border: 1px solid;
-    height: 400px;
+    height: 60%;
     width: 50%;
     border-radius: 20px;
 }
@@ -47,8 +47,6 @@ nav{
     justify-content: center;
     padding: 2vmin;
     gap: 5px;
-
-
 }
 .option{
     height: 30px;
@@ -70,11 +68,19 @@ nav{
     outline: none;
     border: none;
 }
+.score-button1  {
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    border-radius:20px;
+    outline: none;
+    border: none;
+}
 .over{
     height: 30px;
     width: 50px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 10px;
     outline: none;
 }
 #over-runs{
@@ -99,3 +105,16 @@ nav{
 .invisible{
     display: none;
 } 
+.players{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#player1,#player2{
+    height: 30px;
+    margin: 0vmin 1vmin;
+    border-radius: 10px;
+    text-align: center;
+}
