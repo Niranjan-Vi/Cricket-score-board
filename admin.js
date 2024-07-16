@@ -19,6 +19,7 @@ update = document.getElementById('update');
 update.addEventListener('click', () => {
     add();
     player_details();
+    
 });
 function add() {
     console.log(team1.value);
