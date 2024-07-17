@@ -15,8 +15,8 @@
         <button class="button"> <a href="index.html">Home</a></button>
     </nav>
     <div class="container">
-        <div class="head">
-            Select Team
+        <div class="head" >
+           <h3 id="head">Select Team</h3> 
         </div>
         <div class="nav">
             <select class="option" id="team1">
@@ -37,16 +37,18 @@
         <div class="ball">
             <button id="current-run"></button>
         </div>
-        <div class="players">
-            <h3>player 1 </h3>
-            <input type="text"  id="player1" placeholder="enter player name">
-            <h3>player 2 </h3>
-            <input type="text"  id="player2" placeholder="enter player name">
-        </div>
+        
         <div class="score-card">
             <h3>Over
             </h3>
-            <input type="text" class="over" id="over">
+            <input type="text" class="over" id="over"> 
+            <h3>Total runs
+            </h3> 
+            <input type="text" class="over"  id="t_runs">
+            <h3>Total wickets
+            </h3> 
+            <input type="text" class="over"  id="t_wickets">
+            
         </div>
         <div id="over-runs">
             <button id="run" class="score-button ">1</button>
@@ -58,7 +60,7 @@
             <button id="wicket" class="score-button score-button1 ">W</button>
         </div>
         <div class="tail">
-            <button id="update">Update</button>
+            <button id="update">Reset</button>
 
         </div>
     </div>

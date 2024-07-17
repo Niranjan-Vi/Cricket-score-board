@@ -5,9 +5,13 @@ let over = document.getElementById('over');
 let run = document.querySelectorAll('.score-button');
 let player1 = document.getElementById('player1');
 let player2 = document.getElementById('player2');
+let t_runs = document.getElementById('t_runs');
+let t_wickets = document.getElementById('t_wickets');
+let all_out = document.getElementById('head');
+
 // Variables 
-
-
+let value=true;
+let wickets = 0;
 let over_count = 0;
 let runs = [];
 let count = 0;
@@ -17,15 +21,20 @@ let second_player = "";
 
 update = document.getElementById('update');
 update.addEventListener('click', () => {
-    add();
-    player_details();
     
+    wickets = 0;
+    over_count = 0;
+    runs = [];
+    count = 0;
+    over.value =count;
+    t_runs.value=0;
+    t_wickets.value=0 ;
+   wicker_disable(button);
+    all_out.innerHTML="Select Team";
+    
+
 });
-function add() {
-    console.log(team1.value);
-    console.log(team2.value);
-    console.log(over.value);
-}
+
 run.forEach(button => {
     button.addEventListener('click', () => {
         scorecalculation(button);
@@ -36,6 +45,7 @@ run.forEach(button => {
             count = 0;
 
         }
+        wicker_disable(button);
 
     });
 
@@ -46,8 +56,10 @@ function scorecalculation(button) {
     if (button.innerHTML == 'W') {
         console.log("wicket");
         runs.push(0);
+        wickets++;
+        t_wickets.value = wickets + "/10";
         count++;
-
+       
     }
     else if (button.innerHTML == 'WD') {
         // s = parseInt(button.innerHTML);
@@ -60,28 +72,6 @@ function scorecalculation(button) {
         let count1 = count;
         over.value = over_count + "." + count;
     }
-    //ball count
-    if (runs[runs.length - 1] <= 3 ) {
-        if (button.innerHTML == 'W') {
-            if (player1.style.color = "red") {
-                console.log("player1 got out");
-                player1.value = " ";
-            }
-            else {
-                console.log("player2 got out");
-                player2.value = " ";
-            }
-        }
-        else if (!(count % 2 == 0)) {
-            player2.style.backgroundColor = "transparent";
-            player1.style.backgroundColor = "red";
-
-        } else {
-            player2.style.backgroundColor = "red";
-            player1.style.backgroundColor = "transparent";
-
-        }
-    }
 
     runcount();
 
@@ -92,10 +82,16 @@ function runcount() {
     for (let i = 0; i < runs.length; i++) {
         sum += runs[i];
     }
-
+    t_runs.value = sum;
     console.log("total run is" + sum);
 }
-function player_details() {
-    player1.value;
-    player2.value;
+function wicker_disable(button){
+    if (wickets == 10 || !value) {
+        all_out.innerHTML = "All OUT";
+        button.disabled = value;
+
+    }
+    else{
+        button.disabled = !value;
+    }
 }

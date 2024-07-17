@@ -3,10 +3,19 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    background-color: transparent;
+    font-family: sans-serif;
+    
 }
 body{
     overflow: hidden;
     font-family: sans-serif;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/599/783/829/hyderabad-cricketstadium-sport-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2{
+    color: white;
 }
 nav{
     height: 60px;
@@ -22,8 +31,8 @@ nav{
     width: 90px;
     margin-right: 40px;
     border-radius: 20px;
-    outline: none;
-    border:none ;
+    background-color: wheat;
+    border:1px solid white ;
 }
 .container{
     position: absolute;
@@ -34,6 +43,8 @@ nav{
     height: 60%;
     width: 50%;
     border-radius: 20px;
+    backdrop-filter: blur(2px);
+    
 }
 .head{
     text-align: center;
@@ -66,7 +77,7 @@ nav{
     width: 40px;
     border-radius:20px;
     outline: none;
-    border: none;
+    background-color: rgb(123, 114, 103);
 }
 .score-button1  {
     background-color: red;
@@ -74,7 +85,7 @@ nav{
     width: 40px;
     border-radius:20px;
     outline: none;
-    border: none;
+    
 }
 .over{
     height: 30px;
@@ -96,11 +107,12 @@ nav{
     justify-content: center;
     gap: 20px;
 }
-#update,#undo{
+#update{
     height: 40px;
     width: 60px;
     border-radius: 20px;
     outline: none;
+    background-color:rgb(123, 114, 103) ;
 }
 .invisible{
     display: none;
@@ -117,4 +129,6 @@ nav{
     margin: 0vmin 1vmin;
     border-radius: 10px;
     text-align: center;
+    background-color: rgb(123, 114, 103);
+    color: black;
 }
